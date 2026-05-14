@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arnaudlegout.github.io/formation-consulting/sitemap.xml

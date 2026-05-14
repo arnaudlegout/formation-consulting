@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDITEZ-MOI : titre de l'article (apparaît dans l'onglet et les résultats de recherche) -->
+  <title>Titre de l'article | Arnaud Legout</title>
+  <!-- EDITEZ-MOI : résumé pour les moteurs de recherche (150-160 caractères) -->
+  <meta name="description" content="Résumé de l'article pour les moteurs de recherche.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preload" href="../assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/source-serif-4-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="../index.html" class="nav__logo">Arnaud Legout</a>
+      <button type="button" class="nav__burger" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__burger-bar"></span>
+        <span class="nav__burger-bar"></span>
+        <span class="nav__burger-bar"></span>
+      </button>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--has-dropdown">
+            <button type="button" class="nav__link">Formations</button>
+            <ul class="nav__dropdown">
+              <li><a href="../formations/python-data-science-niveau-1.html">Python data science — niveau 1</a></li>
+              <li><a href="../formations/python-data-science-niveau-2.html">Python data science — niveau 2</a></li>
+              <li><a href="../formations/python-machine-learning.html">Python machine learning</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="../consulting.html" class="nav__link">Consulting</a></li>
+          <li class="nav__item"><a href="../a-propos.html" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="../contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-content">
+      <div class="container">
+
+        <article>
+
+          <header class="article-header">
+            <!-- EDITEZ-MOI : titre principal de l'article -->
+            <h1>Titre de l'article</h1>
+            <div class="article-meta">
+              <!-- EDITEZ-MOI : date au format JJ mois AAAA -->
+              <span>13 mai 2026</span>
+              <!-- EDITEZ-MOI : temps de lecture estimé -->
+              <span>8 min de lecture</span>
+            </div>
+          </header>
+
+          <!-- EDITEZ-MOI : corps de l'article -->
+          <div class="article-body">
+
+            <p>Introduction de l'article. Expliquer le problème ou le contexte en quelques phrases directes.</p>
+
+            <h2>Première section</h2>
+
+            <p>Contenu de la première section.</p>
+
+            <!-- Exemple de bloc de code Python -->
+            <pre><code>import polars as pl
+
+df = pl.read_parquet("data.parquet")
+print(df.head())</code></pre>
+
+            <p>Explication du code ci-dessus.</p>
+
+            <!-- Exemple de code inline -->
+            <p>On peut aussi utiliser <code>pl.scan_parquet()</code> pour le mode lazy.</p>
+
+            <h2>Deuxième section</h2>
+
+            <p>Contenu de la deuxième section.</p>
+
+            <h3>Sous-section</h3>
+
+            <p>Contenu de la sous-section.</p>
+
+            <ul>
+              <li>Premier point</li>
+              <li>Deuxième point</li>
+              <li>Troisième point</li>
+            </ul>
+
+            <!-- Exemple de citation / blockquote -->
+            <blockquote>
+              <p>Une citation ou une mise en valeur d'un point important.</p>
+            </blockquote>
+
+            <h2>Conclusion</h2>
+
+            <p>Conclusion de l'article. Résumer les points clés et indiquer la prochaine étape.</p>
+
+          </div>
+          <!-- fin article-body -->
+
+        </article>
+
+        <!-- Lien retour vers la liste des articles -->
+        <div class="page-cta" style="text-align:left;">
+          <a href="../articles.html" class="btn btn--secondary">← Tous les articles</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <p class="footer__col-title">Arnaud Legout</p>
+          <p class="footer__tagline">Directeur de Recherche Inria — Sophia Antipolis, France</p>
+          <ul class="footer__link-list">
+            <li><a href="https://www-sop.inria.fr/members/Arnaud.Legout/" target="_blank" rel="noopener">Page personnelle Inria</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__link-list">
+            <li><a href="../formations/python-data-science-niveau-1.html">Python data science niveau 1</a></li>
+            <li><a href="../formations/python-data-science-niveau-2.html">Python data science niveau 2</a></li>
+            <li><a href="../formations/python-machine-learning.html">Python machine learning</a></li>
+            <li><a href="../consulting.html">Consulting</a></li>
+            <li><a href="../a-propos.html">À propos</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <!-- <li><a href="../articles.html">Articles</a></li> -->
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__contact-list">
+            <li><a href="mailto:arnaud.legout@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/arnaud-legout-866a404/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="../mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Arnaud Legout. Site statique sans tracking ni cookies.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script data-goatcounter="https://arnaudlegout-formations.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav__burger');
+      var menu = document.getElementById('nav-menu');
+      if (!btn || !menu) return;
+      function closeMenu() {
+        btn.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+      }
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('is-open', !open);
+      });
+      menu.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') closeMenu();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
+      });
+    })();
+  </script>
+</body>
+</html>
