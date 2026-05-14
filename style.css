@@ -619,6 +619,11 @@ button.nav__link {
   color: var(--color-cta);
 }
 
+.figure-item__rating {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
 .figure-item__note a {
   color: var(--color-accent);
   font-weight: 500;
