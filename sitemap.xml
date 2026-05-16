@@ -30,6 +30,20 @@
   </url>
 
   <url>
+    <loc>https://arnaudlegout.github.io/formation-consulting/formations/python-niveau-1.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://arnaudlegout.github.io/formation-consulting/formations/python-avance.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://arnaudlegout.github.io/formation-consulting/consulting.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
