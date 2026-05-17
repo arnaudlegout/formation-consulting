@@ -130,6 +130,25 @@ img, video {
 
 a { color: inherit; text-decoration: none; }
 
+/* Inline text links — paragraphs and content-area list items */
+p a:not(.btn),
+.page-section li a:not(.btn),
+.article-body li a:not(.btn),
+.legal-content li a:not(.btn) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(26, 26, 26, 0.3);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+p a:not(.btn):hover,
+.page-section li a:not(.btn):hover,
+.article-body li a:not(.btn):hover,
+.legal-content li a:not(.btn):hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+
 ul, ol { list-style: none; }
 
 /* ============================================================
