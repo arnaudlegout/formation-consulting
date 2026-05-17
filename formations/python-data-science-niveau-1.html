@@ -116,6 +116,62 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre une vue et une copie dans Pandas, et pourquoi est-ce important ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "C'est historiquement l'un des pièges les plus fréquents en Pandas. Depuis Pandas 3.0, le mécanisme Copy-on-Write (CoW) uniformise complètement la notion de vue et rend ce problème beaucoup plus simple à raisonner. La formation couvre les idiomes les plus modernes et efficaces des librairies enseignées — y compris les évolutions récentes de Pandas qui changent les bonnes pratiques."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Pourquoi apprendre Seaborn plutôt que Matplotlib directement ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seaborn est construit au-dessus de Matplotlib et produit des visualisations statistiques publiables avec beaucoup moins de code. Il est couvert en module 4, avec la personnalisation des thèmes et l'export de figures. Matplotlib reste accessible en dessous quand une personnalisation fine est nécessaire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le format Parquet est-il vraiment nécessaire à ce niveau ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Parquet est devenu le format de référence pour l'échange et le stockage de données tabulaires en data science. La formation couvre la lecture et l'écriture Parquet avec Pandas et PyArrow, ainsi que la compression et le partitionnement — des notions utiles dès qu'on travaille avec des fichiers de taille significative."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mes équipes n'ont pas toutes le même niveau Python. Comment ça se passe ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le niveau est calibré en fonction du groupe. Si certains collaborateurs n'ont pas le niveau Python requis (fonctions, itération, modules, espaces de nommage), la formation Python niveau 1 peut être ajoutée en amont. C'est à discuter au moment du devis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cette formation couvre-t-elle les séries temporelles ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, en module 3 : DatetimeIndex, resample et rolling sont traités dans Pandas. C'est un sujet fréquent pour les équipes qui travaillent sur des données de capteurs, des logs ou des données financières."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le format distanciel est-il adapté à ce type de formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -209,12 +265,18 @@
           <p>Architecture de Seaborn et relation avec Matplotlib. Graphiques relationnels (<code>relplot</code>), de distribution (<code>displot</code>), catégoriels (<code>catplot</code>). Visualisations multivariées&nbsp;: <code>distplot</code>, <code>pairplot</code>. Personnalisation&nbsp;: thèmes, palettes, export de figures publiables.</p>
         </div>
 
+        <div class="page-encart">
+          <h2>Vos équipes ont-elles le niveau Python requis&nbsp;?</h2>
+          <p>Les formations data science supposent une bonne maîtrise de Python&nbsp;: fonctions, itération, modules, espaces de nommage. Si ce n'est pas le cas de tous vos collaborateurs, je peux compléter la formation par le module <strong><a href="../formations/python-niveau-1.html">Python — niveau 1</a></strong> en amont des journées data science. Pour les équipes qui développent du code complexe, le module <strong><a href="../formations/python-avance.html">Python — avancé</a></strong> (programmation objet, décorateurs, métaclasses) est également disponible.</p>
+          <p>Ces compléments sont proposés au cas par cas — n'hésitez pas à m'en parler dans votre demande de devis.</p>
+        </div>
+
         <div class="page-section">
           <h2>Public et prérequis</h2>
           <p><strong>Public cible</strong></p>
           <p>Data scientists, ingénieurs, chercheurs et doctorants souhaitant maîtriser les outils Python fondamentaux pour l'analyse de données.</p>
           <p><strong>Prérequis</strong></p>
-          <p>Maîtrise intermédiaire de Python&nbsp;: fonctions, itération, espaces de nommage, importation de modules. Si vos équipes n'ont pas ce niveau, je propose une mise à niveau Python en complément — voir le bloc <em>Vos équipes ont-elles le niveau Python requis&nbsp;?</em> en bas de page.</p>
+          <p>Maîtrise intermédiaire de Python&nbsp;: fonctions, itération, espaces de nommage, importation de modules. Si vos équipes n'ont pas ce niveau, je propose une mise à niveau Python en complément — voir le bloc <em>Vos équipes ont-elles le niveau Python requis&nbsp;?</em> ci-dessus.</p>
         </div>
 
         <div class="page-section">
@@ -228,10 +290,34 @@
           <p><a href="https://numpy.org/doc/stable/" target="_blank" rel="noopener noreferrer">NumPy</a>, <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener noreferrer">Pandas</a>, <a href="https://seaborn.pydata.org/" target="_blank" rel="noopener noreferrer">Seaborn</a>, format <a href="https://parquet.apache.org/" target="_blank" rel="noopener noreferrer">Apache Parquet</a>.</p>
         </div>
 
-        <div class="page-encart">
-          <h2>Vos équipes ont-elles le niveau Python requis&nbsp;?</h2>
-          <p>Les formations data science supposent une bonne maîtrise de Python&nbsp;: fonctions, itération, modules, espaces de nommage. Si ce n'est pas le cas de tous vos collaborateurs, je peux compléter la formation par le module <strong><a href="../formations/python-niveau-1.html">Python — niveau 1</a></strong> en amont des journées data science. Pour les équipes qui développent du code complexe, le module <strong><a href="../formations/python-avance.html">Python — avancé</a></strong> (programmation objet, décorateurs, métaclasses) est également disponible.</p>
-          <p>Ces compléments sont proposés au cas par cas — n'hésitez pas à m'en parler dans votre demande de devis.</p>
+        <div class="page-section" id="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">Questions fréquentes</h2>
+          <div class="faq">
+            <details class="faq__item">
+              <summary>Quelle est la différence entre une vue et une copie dans Pandas, et pourquoi est-ce important&nbsp;?</summary>
+              <div class="faq__answer"><p>C'est historiquement l'un des pièges les plus fréquents en Pandas. Depuis Pandas 3.0, le mécanisme Copy-on-Write (CoW) uniformise complètement la notion de vue et rend ce problème beaucoup plus simple à raisonner. La formation couvre les idiomes les plus modernes et efficaces des librairies enseignées — y compris les évolutions récentes de Pandas qui changent les bonnes pratiques.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Pourquoi apprendre Seaborn plutôt que Matplotlib directement&nbsp;?</summary>
+              <div class="faq__answer"><p>Seaborn est construit au-dessus de Matplotlib et produit des visualisations statistiques publiables avec beaucoup moins de code. Il est couvert en module 4, avec la personnalisation des thèmes et l'export de figures. Matplotlib reste accessible en dessous quand une personnalisation fine est nécessaire.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Le format Parquet est-il vraiment nécessaire à ce niveau&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. Parquet est devenu le format de référence pour l'échange et le stockage de données tabulaires en data science. La formation couvre la lecture et l'écriture Parquet avec Pandas et PyArrow, ainsi que la compression et le partitionnement — des notions utiles dès qu'on travaille avec des fichiers de taille significative.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Mes équipes n'ont pas toutes le même niveau Python. Comment ça se passe&nbsp;?</summary>
+              <div class="faq__answer"><p>Le niveau est calibré en fonction du groupe. Si certains collaborateurs n'ont pas le niveau Python requis (fonctions, itération, modules, espaces de nommage), la formation Python niveau 1 peut être ajoutée en amont. C'est à discuter au moment du devis.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Cette formation couvre-t-elle les séries temporelles&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui, en module 3&nbsp;: DatetimeIndex, resample et rolling sont traités dans Pandas. C'est un sujet fréquent pour les équipes qui travaillent sur des données de capteurs, des logs ou des données financières.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Le format distanciel est-il adapté à ce type de formation&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer.</p></div>
+            </details>
+          </div>
         </div>
 
         <div class="page-cta">

@@ -1078,6 +1078,60 @@ button.nav__link {
   text-align: center;
 }
 
+#faq + .page-cta {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* ============================================================
+   FAQ ACCORDION
+   ============================================================ */
+
+.faq {
+  border-top: 1px solid var(--color-border);
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq__item summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.125rem 0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  user-select: none;
+}
+
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::marker { display: none; }
+
+.faq__item summary::after {
+  content: '+';
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1;
+}
+
+.faq__item[open] > summary::after {
+  content: '−';
+}
+
+.faq__answer {
+  padding: 0 0 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
 /* ============================================================
    ABOUT PAGE
    ============================================================ */

@@ -118,6 +118,62 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Polars remplace-t-il complètement Pandas ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Polars est aujourd'hui le meilleur choix pour passer un pipeline data du prototype à la production. La formation couvre la migration de Pandas vers Polars avec les stratégies et équivalences. En pratique, beaucoup d'équipes maintiennent les deux pendant une période de transition — la formation prépare à gérer cette coexistence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce que le streaming engine de Polars et quand en a-t-on besoin ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le streaming engine de Polars permet de traiter des datasets qui dépassent la RAM disponible en traitant les données par blocs de façon transparente. C'est traité en module 1. Cas typique : un fichier Parquet de 200 Go sur une machine avec 32 Go de RAM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre Numba et multiprocessing, et quand choisir l'un ou l'autre ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Numba accélère des calculs numériques intensifs par compilation JIT — utile pour des boucles ou des fonctions NumPy. Multiprocessing parallélise des tâches indépendantes en contournant le GIL Python — utile pour des traitements CPU-bound de type \"map\". Le module 3 traite explicitement la comparaison et les critères de choix."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Faut-il avoir suivi la formation niveau 1 avant celle-ci ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La formation niveau 2 suppose une maîtrise intermédiaire de Python et une pratique de Pandas/NumPy. La formation Python data science niveau 1 est la suite logique naturelle, mais un niveau équivalent acquis par la pratique convient également."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cette formation est-elle adaptée à des chercheurs qui traitent de gros volumes de données ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, c'est précisément le public visé. Le formateur utilise Polars quotidiennement dans ses propres travaux de recherche, notamment pour analyser 16,5 milliards de transactions Bitcoin sur fichiers Parquet partitionnés — la formation est construite à partir de cette pratique réelle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le format distanciel est-il adapté à ce type de formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -226,6 +282,12 @@
           <p>Le GIL Python et ses implications pour le parallélisme CPU-bound. Le module <code>multiprocessing</code>&nbsp;: Process, Pool, Queue, Pipe. <code>Pool.map()</code> et <code>Pool.starmap()</code>&nbsp;: parallélisation de tâches indépendantes. Partage de mémoire et communication entre processus. Comparaison <code>multiprocessing</code> vs Numba vs Polars&nbsp;: quand utiliser quoi. Pièges courants et débogage de code multiprocessing.</p>
         </div>
 
+        <div class="page-encart">
+          <h2>Vos équipes ont-elles le niveau Python requis&nbsp;?</h2>
+          <p>Les formations data science supposent une bonne maîtrise de Python&nbsp;: fonctions, itération, modules, espaces de nommage. Si ce n'est pas le cas de tous vos collaborateurs, je peux compléter la formation par le module <strong><a href="../formations/python-niveau-1.html">Python — niveau 1</a></strong> en amont des journées data science. Pour les équipes qui développent du code complexe, le module <strong><a href="../formations/python-avance.html">Python — avancé</a></strong> (programmation objet, décorateurs, métaclasses) est également disponible.</p>
+          <p>Ces compléments sont proposés au cas par cas — n'hésitez pas à m'en parler dans votre demande de devis.</p>
+        </div>
+
         <div class="page-section">
           <h2>Public et prérequis</h2>
           <p><strong>Public cible</strong></p>
@@ -245,10 +307,34 @@
           <p><a href="https://docs.pola.rs/" target="_blank" rel="noopener noreferrer">Polars</a>, <a href="https://numba.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Numba</a>, module <a href="https://docs.python.org/3/library/multiprocessing.html" target="_blank" rel="noopener noreferrer">multiprocessing</a> (Python&nbsp;3), format <a href="https://parquet.apache.org/" target="_blank" rel="noopener noreferrer">Apache Parquet</a>.</p>
         </div>
 
-        <div class="page-encart">
-          <h2>Vos équipes ont-elles le niveau Python requis&nbsp;?</h2>
-          <p>Les formations data science supposent une bonne maîtrise de Python&nbsp;: fonctions, itération, modules, espaces de nommage. Si ce n'est pas le cas de tous vos collaborateurs, je peux compléter la formation par le module <strong><a href="../formations/python-niveau-1.html">Python — niveau 1</a></strong> en amont des journées data science. Pour les équipes qui développent du code complexe, le module <strong><a href="../formations/python-avance.html">Python — avancé</a></strong> (programmation objet, décorateurs, métaclasses) est également disponible.</p>
-          <p>Ces compléments sont proposés au cas par cas — n'hésitez pas à m'en parler dans votre demande de devis.</p>
+        <div class="page-section" id="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">Questions fréquentes</h2>
+          <div class="faq">
+            <details class="faq__item">
+              <summary>Polars remplace-t-il complètement Pandas&nbsp;?</summary>
+              <div class="faq__answer"><p>Polars est aujourd'hui le meilleur choix pour passer un pipeline data du prototype à la production. La formation couvre la migration de Pandas vers Polars avec les stratégies et équivalences. En pratique, beaucoup d'équipes maintiennent les deux pendant une période de transition — la formation prépare à gérer cette coexistence.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Qu'est-ce que le streaming engine de Polars et quand en a-t-on besoin&nbsp;?</summary>
+              <div class="faq__answer"><p>Le streaming engine de Polars permet de traiter des datasets qui dépassent la RAM disponible en traitant les données par blocs de façon transparente. C'est traité en module 1. Cas typique&nbsp;: un fichier Parquet de 200 Go sur une machine avec 32 Go de RAM.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Quelle est la différence entre Numba et multiprocessing, et quand choisir l'un ou l'autre&nbsp;?</summary>
+              <div class="faq__answer"><p>Numba accélère des calculs numériques intensifs par compilation JIT — utile pour des boucles ou des fonctions NumPy. Multiprocessing parallélise des tâches indépendantes en contournant le GIL Python — utile pour des traitements CPU-bound de type "map". Le module 3 traite explicitement la comparaison et les critères de choix.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Faut-il avoir suivi la formation niveau 1 avant celle-ci&nbsp;?</summary>
+              <div class="faq__answer"><p>La formation niveau 2 suppose une maîtrise intermédiaire de Python et une pratique de Pandas/NumPy. La formation Python data science niveau 1 est la suite logique naturelle, mais un niveau équivalent acquis par la pratique convient également.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Cette formation est-elle adaptée à des chercheurs qui traitent de gros volumes de données&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui, c'est précisément le public visé. Le formateur utilise Polars quotidiennement dans ses propres travaux de recherche, notamment pour analyser 16,5 milliards de transactions Bitcoin sur fichiers Parquet partitionnés — la formation est construite à partir de cette pratique réelle.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Le format distanciel est-il adapté à ce type de formation&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer.</p></div>
+            </details>
+          </div>
         </div>
 
         <div class="page-cta">

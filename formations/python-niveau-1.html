@@ -118,6 +118,62 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Est-ce que cette formation convient à quelqu'un qui n'a jamais fait de Python ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, aucune connaissance préalable de Python n'est nécessaire. La formation est conçue pour des ingénieurs, chercheurs ou doctorants qui programment déjà dans un autre langage (C, Java, Fortran, Matlab…) et qui veulent acquérir une maîtrise solide de Python, pas juste en apprendre la syntaxe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "En combien de temps peut-on être opérationnel en Python après cette formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La formation dure 3 jours. À l'issue, les participants maîtrisent les mécanismes fondamentaux qui font la spécificité de Python : références partagées, espaces de nommage, protocole d'itération. Ce sont les modèles mentaux qui permettent d'écrire du Python idiomatique dès le retour en poste — à condition de pratiquer activement dans les semaines qui suivent, ce qui est déterminant pour l'assimilation durable des concepts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "La programmation orientée objet est-elle couverte ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le module POO (classes, héritage, surcharge d'opérateurs) est abordé en module 5, selon l'avancement du groupe. Il n'est traité qu'avec les groupes qui ont solidement assimilé les notions précédentes — la priorité reste les fondamentaux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cette formation est-elle un prérequis aux formations data science ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, c'est son rôle naturel. Une fois les mécanismes fondamentaux maîtrisés — références partagées, itération, espaces de nommage — NumPy, Pandas et Polars s'apprennent beaucoup plus vite et le code produit est meilleur dès le premier jet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le format distanciel est-il adapté à ce type de formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les supports sont-ils fournis après la formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Les participants reçoivent les supports de cours et les notebooks d'exercices corrigés à l'issue de la formation."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -236,6 +292,36 @@
         <div class="page-section">
           <h2>Documentation officielle</h2>
           <p><a href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer">Documentation Python&nbsp;3</a> et son <a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener noreferrer">tutoriel officiel</a>.</p>
+        </div>
+
+        <div class="page-section" id="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">Questions fréquentes</h2>
+          <div class="faq">
+            <details class="faq__item">
+              <summary>Est-ce que cette formation convient à quelqu'un qui n'a jamais fait de Python&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui, aucune connaissance préalable de Python n'est nécessaire. La formation est conçue pour des ingénieurs, chercheurs ou doctorants qui programment déjà dans un autre langage (C, Java, Fortran, Matlab…) et qui veulent acquérir une maîtrise solide de Python, pas juste en apprendre la syntaxe.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>En combien de temps peut-on être opérationnel en Python après cette formation&nbsp;?</summary>
+              <div class="faq__answer"><p>La formation dure 3 jours. À l'issue, les participants maîtrisent les mécanismes fondamentaux qui font la spécificité de Python&nbsp;: références partagées, espaces de nommage, protocole d'itération. Ce sont les modèles mentaux qui permettent d'écrire du Python idiomatique dès le retour en poste — à condition de pratiquer activement dans les semaines qui suivent, ce qui est déterminant pour l'assimilation durable des concepts.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>La programmation orientée objet est-elle couverte&nbsp;?</summary>
+              <div class="faq__answer"><p>Le module POO (classes, héritage, surcharge d'opérateurs) est abordé en module 5, selon l'avancement du groupe. Il n'est traité qu'avec les groupes qui ont solidement assimilé les notions précédentes — la priorité reste les fondamentaux.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Cette formation est-elle un prérequis aux formations data science&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui, c'est son rôle naturel. Une fois les mécanismes fondamentaux maîtrisés — références partagées, itération, espaces de nommage — NumPy, Pandas et Polars s'apprennent beaucoup plus vite et le code produit est meilleur dès le premier jet.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Le format distanciel est-il adapté à ce type de formation&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Les supports sont-ils fournis après la formation&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. Les participants reçoivent les supports de cours et les notebooks d'exercices corrigés à l'issue de la formation.</p></div>
+            </details>
+          </div>
         </div>
 
         <div class="page-cta">

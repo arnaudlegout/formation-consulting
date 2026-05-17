@@ -117,6 +117,62 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre cette formation et un cours de machine learning théorique ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'accent est mis sur la rigueur méthodologique pratique : comment éviter le surapprentissage, comment évaluer correctement un modèle, comment sélectionner des hyperparamètres sans biais ni fuite de données. Les pièges de l'évaluation (p-hacking, comparaison multiple) sont traités explicitement — ce sont précisément les erreurs que commettent des pipelines de production réels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "La formation couvre-t-elle le deep learning ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. La formation couvre les algorithmes classiques de scikit-learn : régression, classification, SVM, arbres, forêts aléatoires, gradient boosting, K-means, PCA. Pour le deep learning (réseaux de neurones, transformers), d'autres outils (PyTorch, TensorFlow) seraient nécessaires — ce n'est pas l'objet de cette formation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce qu'une fuite de données et pourquoi est-ce critique ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Une fuite de données (data leakage) se produit quand des informations du jeu de test contaminent l'entraînement, produisant des métriques de performance trop optimistes. En production, le modèle se révèle bien moins performant qu'annoncé. La sélection d'hyperparamètres avec GridSearchCV est un cas classique traité en module 4."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quels prérequis en mathématiques sont nécessaires ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Une compréhension intuitive des concepts de base (moyenne, variance, probabilités élémentaires) est suffisante. La formation n'est pas axée sur les démonstrations mathématiques mais sur la compréhension des mécanismes et leur application correcte avec scikit-learn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cette formation est-elle adaptée à des doctorants en sciences expérimentales ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, c'est un public fréquent. Les méthodes couvertes — régression, classification, clustering, PCA — sont directement applicables à l'analyse de données expérimentales. La rigueur méthodologique sur l'évaluation des modèles est particulièrement utile dans un contexte de publication scientifique."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le format distanciel est-il adapté à ce type de formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -209,6 +265,12 @@
           <p>Validation croisée&nbsp;: k-fold, stratifiée, leave-one-out. Métriques d'évaluation&nbsp;: accuracy, précision, rappel, F1, AUC-ROC. Sélection d'hyperparamètres&nbsp;: <code>GridSearchCV</code>, <code>RandomizedSearchCV</code>. Pièges de l'évaluation&nbsp;: fuite de données, p-hacking, comparaison multiple.</p>
         </div>
 
+        <div class="page-encart">
+          <h2>Vos équipes ont-elles le niveau Python requis&nbsp;?</h2>
+          <p>Les formations data science supposent une bonne maîtrise de Python&nbsp;: fonctions, itération, modules, espaces de nommage. Si ce n'est pas le cas de tous vos collaborateurs, je peux compléter la formation par le module <strong><a href="../formations/python-niveau-1.html">Python — niveau 1</a></strong> en amont des journées data science. Pour les équipes qui développent du code complexe, le module <strong><a href="../formations/python-avance.html">Python — avancé</a></strong> (programmation objet, décorateurs, métaclasses) est également disponible.</p>
+          <p>Ces compléments sont proposés au cas par cas — n'hésitez pas à m'en parler dans votre demande de devis.</p>
+        </div>
+
         <div class="page-section">
           <h2>Public et prérequis</h2>
           <p><strong>Public cible</strong></p>
@@ -228,10 +290,34 @@
           <p><a href="https://scikit-learn.org/stable/" target="_blank" rel="noopener noreferrer">scikit-learn</a> (dont les <a href="https://scikit-learn.org/stable/modules/compose.html" target="_blank" rel="noopener noreferrer">pipelines</a>), <a href="https://numpy.org/doc/stable/" target="_blank" rel="noopener noreferrer">NumPy</a>, <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener noreferrer">Pandas</a>.</p>
         </div>
 
-        <div class="page-encart">
-          <h2>Vos équipes ont-elles le niveau Python requis&nbsp;?</h2>
-          <p>Les formations data science supposent une bonne maîtrise de Python&nbsp;: fonctions, itération, modules, espaces de nommage. Si ce n'est pas le cas de tous vos collaborateurs, je peux compléter la formation par le module <strong><a href="../formations/python-niveau-1.html">Python — niveau 1</a></strong> en amont des journées data science. Pour les équipes qui développent du code complexe, le module <strong><a href="../formations/python-avance.html">Python — avancé</a></strong> (programmation objet, décorateurs, métaclasses) est également disponible.</p>
-          <p>Ces compléments sont proposés au cas par cas — n'hésitez pas à m'en parler dans votre demande de devis.</p>
+        <div class="page-section" id="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">Questions fréquentes</h2>
+          <div class="faq">
+            <details class="faq__item">
+              <summary>Quelle est la différence entre cette formation et un cours de machine learning théorique&nbsp;?</summary>
+              <div class="faq__answer"><p>L'accent est mis sur la rigueur méthodologique pratique&nbsp;: comment éviter le surapprentissage, comment évaluer correctement un modèle, comment sélectionner des hyperparamètres sans biais ni fuite de données. Les pièges de l'évaluation (p-hacking, comparaison multiple) sont traités explicitement — ce sont précisément les erreurs que commettent des pipelines de production réels.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>La formation couvre-t-elle le deep learning&nbsp;?</summary>
+              <div class="faq__answer"><p>Non. La formation couvre les algorithmes classiques de scikit-learn&nbsp;: régression, classification, SVM, arbres, forêts aléatoires, gradient boosting, K-means, PCA. Pour le deep learning (réseaux de neurones, transformers), d'autres outils (PyTorch, TensorFlow) seraient nécessaires — ce n'est pas l'objet de cette formation.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Qu'est-ce qu'une fuite de données et pourquoi est-ce critique&nbsp;?</summary>
+              <div class="faq__answer"><p>Une fuite de données (data leakage) se produit quand des informations du jeu de test contaminent l'entraînement, produisant des métriques de performance trop optimistes. En production, le modèle se révèle bien moins performant qu'annoncé. La sélection d'hyperparamètres avec GridSearchCV est un cas classique traité en module 4.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Quels prérequis en mathématiques sont nécessaires&nbsp;?</summary>
+              <div class="faq__answer"><p>Une compréhension intuitive des concepts de base (moyenne, variance, probabilités élémentaires) est suffisante. La formation n'est pas axée sur les démonstrations mathématiques mais sur la compréhension des mécanismes et leur application correcte avec scikit-learn.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Cette formation est-elle adaptée à des doctorants en sciences expérimentales&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui, c'est un public fréquent. Les méthodes couvertes — régression, classification, clustering, PCA — sont directement applicables à l'analyse de données expérimentales. La rigueur méthodologique sur l'évaluation des modèles est particulièrement utile dans un contexte de publication scientifique.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Le format distanciel est-il adapté à ce type de formation&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer.</p></div>
+            </details>
+          </div>
         </div>
 
         <div class="page-cta">

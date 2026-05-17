@@ -118,6 +118,62 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quels sont les prérequis concrets pour suivre cette formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il faut maîtriser les références partagées, le typage dynamique, les espaces de nommage et l'itération — soit avoir suivi la formation Python niveau 1, soit disposer d'un niveau équivalent. Une bonne compréhension des classes et instances est également requise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À quoi sert concrètement de connaître les métaclasses ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les métaclasses permettent de comprendre le modèle objet de Python en profondeur, et d'écrire du code générique : enregistrement automatique de classes, validation à la définition, singletons. Elles apparaissent régulièrement dans les codes sources de Pandas, SQLAlchemy et pytest — des librairies que beaucoup d'équipes utilisent sans pouvoir en lire le code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre un décorateur sous forme de fonction et sous forme de classe ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les deux formes sont couvertes en module 2. Les décorateurs sous forme de classe peuvent sembler plus simples et plus puissants au premier abord, mais ils ont des limitations importantes — notamment l'impossibilité de décorer des méthodes de classe. Les décorateurs sous forme de fonction, appuyés sur les notions de clôtures et d'attributs non locaux (ou d'attributs de fonction), permettent de développer des décorateurs puissants et totalement génériques. C'est cette approche qui est privilégiée dans la formation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cette formation est-elle utile pour des équipes qui n'écrivent pas de librairies ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Comprendre les descripteurs, les générateurs et les décorateurs permet de lire et de maintenir du code Python complexe, même sans en écrire. C'est utile pour toute équipe qui travaille avec des librairies tierces ou qui reprend du code de production existant."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le format distanciel est-il adapté à ce type de formation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Peut-on combiner cette formation avec une formation data science ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, c'est une combinaison naturelle pour les équipes qui veulent à la fois la performance (Polars, Numba) et la qualité d'architecture (décorateurs, descripteurs, métaclasses)."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -236,6 +292,36 @@
         <div class="page-section">
           <h2>Documentation officielle</h2>
           <p><a href="https://docs.python.org/3/reference/datamodel.html" target="_blank" rel="noopener noreferrer">Data Model Python</a> (métaclasses, descripteurs), <a href="https://peps.python.org/pep-0318/" target="_blank" rel="noopener noreferrer">PEP&nbsp;318</a> (décorateurs), <a href="https://peps.python.org/pep-0255/" target="_blank" rel="noopener noreferrer">PEP&nbsp;255</a> (générateurs).</p>
+        </div>
+
+        <div class="page-section" id="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">Questions fréquentes</h2>
+          <div class="faq">
+            <details class="faq__item">
+              <summary>Quels sont les prérequis concrets pour suivre cette formation&nbsp;?</summary>
+              <div class="faq__answer"><p>Il faut maîtriser les références partagées, le typage dynamique, les espaces de nommage et l'itération — soit avoir suivi la formation Python niveau 1, soit disposer d'un niveau équivalent. Une bonne compréhension des classes et instances est également requise.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>À quoi sert concrètement de connaître les métaclasses&nbsp;?</summary>
+              <div class="faq__answer"><p>Les métaclasses permettent de comprendre le modèle objet de Python en profondeur, et d'écrire du code générique&nbsp;: enregistrement automatique de classes, validation à la définition, singletons. Elles apparaissent régulièrement dans les codes sources de Pandas, SQLAlchemy et pytest — des librairies que beaucoup d'équipes utilisent sans pouvoir en lire le code.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Quelle est la différence entre un décorateur sous forme de fonction et sous forme de classe&nbsp;?</summary>
+              <div class="faq__answer"><p>Les deux formes sont couvertes en module 2. Les décorateurs sous forme de classe peuvent sembler plus simples et plus puissants au premier abord, mais ils ont des limitations importantes — notamment l'impossibilité de décorer des méthodes de classe. Les décorateurs sous forme de fonction, appuyés sur les notions de clôtures et d'attributs non locaux (ou d'attributs de fonction), permettent de développer des décorateurs puissants et totalement génériques. C'est cette approche qui est privilégiée dans la formation.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Cette formation est-elle utile pour des équipes qui n'écrivent pas de librairies&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. Comprendre les descripteurs, les générateurs et les décorateurs permet de lire et de maintenir du code Python complexe, même sans en écrire. C'est utile pour toute équipe qui travaille avec des librairies tierces ou qui reprend du code de production existant.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Le format distanciel est-il adapté à ce type de formation&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui. 90 % des participants jugent le format distanciel équivalent ou supérieur au présentiel. J'anime des formations à distance depuis 2020 et j'ai développé une pratique solide de l'enseignement en ligne. J'utilise Zoom, qui permet d'enregistrer les sessions et de les mettre à disposition des participants si souhaité, et CoCalc, une plateforme en ligne qui donne accès à des serveurs pré-configurés avec l'ensemble du matériel de formation et des librairies installées. CoCalc me permet également de suivre en temps réel la progression de chaque participant et d'intervenir directement pour corriger ou débloquer.</p></div>
+            </details>
+            <details class="faq__item">
+              <summary>Peut-on combiner cette formation avec une formation data science&nbsp;?</summary>
+              <div class="faq__answer"><p>Oui, c'est une combinaison naturelle pour les équipes qui veulent à la fois la performance (Polars, Numba) et la qualité d'architecture (décorateurs, descripteurs, métaclasses).</p></div>
+            </details>
+          </div>
         </div>
 
         <div class="page-cta">
