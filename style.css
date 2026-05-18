@@ -1128,6 +1128,16 @@ button.nav__link {
   line-height: 1.75;
 }
 
+.faq__group-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
 /* ============================================================
    ABOUT PAGE
    ============================================================ */
