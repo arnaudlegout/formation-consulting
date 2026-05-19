@@ -661,6 +661,15 @@ button.nav__link {
 .section-header h2 { margin-bottom: 0.75rem; }
 .section-header p  { color: var(--color-text-muted); }
 
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
 /* ============================================================
    FORMATION CARDS
    ============================================================ */
@@ -790,6 +799,7 @@ button.nav__link {
   font-family: var(--font-sans);
   font-size: 1.0625rem;
   font-weight: 600;
+  color: var(--color-accent);
   margin-bottom: 0.6rem;
 }
 @media (min-width: 768px) {
@@ -803,7 +813,18 @@ button.nav__link {
 
 .ia-section__takeaway {
   font-weight: 600;
+  font-size: 1.0625rem;
+  border-left: 3px solid var(--color-accent);
+  background-color: var(--color-bg-alt);
+  padding: 1.25rem 1.5rem;
   margin-top: 2.5rem;
+}
+
+.ia-section__cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* ============================================================
