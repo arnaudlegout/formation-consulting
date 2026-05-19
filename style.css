@@ -768,6 +768,45 @@ button.nav__link {
 .conseil-bloc p:last-of-type { margin-bottom: 1.75rem; }
 
 /* ============================================================
+   IA AGENTIQUE — PROSE SECTION
+   ============================================================ */
+
+.ia-section .container { max-width: var(--max-text); }
+.ia-section h2 { margin-bottom: 1.75rem; }
+
+.ia-section__lead {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .ia-section__lead { font-size: 1.15rem; }
+}
+
+.ia-point { margin-bottom: 2.25rem; }
+
+.ia-point h3 {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+@media (min-width: 768px) {
+  .ia-point h3 { font-size: 1.15rem; }
+}
+
+.ia-point p {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+.ia-section__takeaway {
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+/* ============================================================
    ENCART COMPACT
    ============================================================ */
 
