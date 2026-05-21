@@ -69,7 +69,7 @@
   --color-text:         #1A1A1A;
   --color-text-muted:   #525252;
   --color-accent:       #0B3D91;
-  --color-accent-hover: #082A66;
+  --color-accent-hover: #2563EB;
   --color-cta:          #C2410C;
   --color-cta-hover:    #9A330A;
   --color-border:       #E5E5E2;
@@ -653,9 +653,11 @@ button.nav__link {
   text-decoration: none;
 }
 
-.figure-item__note a:hover {
+.figure-item__note a:hover,
+.figure-item__note a:focus-visible {
   color: var(--color-accent-hover);
   border-color: var(--color-accent-hover);
+  box-shadow: 0 1px 0 var(--color-accent-hover);
 }
 
 /* ============================================================
@@ -771,17 +773,20 @@ button.nav__link {
 
 .card__link {
   display: inline-block;
+  align-self: flex-start;
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--color-accent);
   border-bottom: 1.5px solid var(--color-accent);
-  padding-bottom: 1px;
+  padding-bottom: 2px;
   margin-top: auto;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
-.card__link:hover {
+.card__link:hover,
+.card__link:focus-visible {
   color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  border-bottom-color: var(--color-accent-hover);
+  box-shadow: 0 1.5px 0 var(--color-accent-hover);
 }
 
 /* ============================================================
