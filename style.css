@@ -1313,6 +1313,15 @@ button.nav__link {
    CONTACT PAGE
    ============================================================ */
 
+/* Iframe du formulaire Tally : dimensions en CSS, pas en attributs
+   (width/frameborder/marginwidth/marginheight ne sont pas du HTML valide) */
+.tally-embed {
+  display: block;
+  width: 100%;
+  min-height: 700px;
+  border: 0;
+}
+
 .tally-placeholder {
   border: 2px dashed var(--color-border);
   border-radius: 6px;
