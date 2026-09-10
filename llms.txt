@@ -1,0 +1,16 @@
+# Arnaud Legout — Formations Python data science
+
+> Formations intra-entreprise Python data science et haute performance. 3 jours, 10 participants max, français ou anglais. Note 4,93/5. Devis gratuit.
+
+## Pages
+- [Formation Python data science — NumPy, Pandas, Polars, scikit-learn](https://formation.arnaudlegout.fr/) : Formations intra-entreprise Python data science et haute performance. 3 jours, 10 participants max, français ou anglais. Note 4,93/5. Devis gratuit.
+- [Formation Python data science — NumPy, Pandas, Seaborn](https://formation.arnaudlegout.fr/formations/python-data-science-niveau-1.html) : NumPy, Pandas, Seaborn en 3 jours : vectorisation, DataFrames, Parquet, visualisation. Intra-entreprise, français ou anglais. Note 4,93/5.
+- [Formation Python haute performance — Polars, Numba, Multiprocessing](https://formation.arnaudlegout.fr/formations/python-data-science-niveau-2.html) : Polars streaming engine, Numba JIT, parallélisme multi-cœurs. Au-delà de Pandas. 3 jours pour data scientists et ingénieurs. Intra-entreprise. Note 4,93/5.
+- [Formation Python machine learning scikit-learn](https://formation.arnaudlegout.fr/formations/python-machine-learning.html) : scikit-learn en 3 jours : pipelines, validation croisée, méthodes d'ensemble. Rigueur méthodologique, sans surapprentissage. Intra-entreprise. Note 4,93/5.
+- [Formation Python fondamentaux — pour ingénieurs et chercheurs](https://formation.arnaudlegout.fr/formations/python-niveau-1.html) : Fondamentaux Python en 3 jours : fonctions, itération, modules, espaces de nommage. Pour ingénieurs et chercheurs. Prérequis data science. Note 4,93/5.
+- [Formation Python avancé — décorateurs, descripteurs, métaclasses](https://formation.arnaudlegout.fr/formations/python-avance.html) : Mécanismes internes de Python : décorateurs, générateurs, descripteurs, métaclasses. 3 jours pour développeurs expérimentés. Intra-entreprise. Note 4,93/5.
+- [Arnaud Legout — Directeur de Recherche Inria, formateur Python](https://formation.arnaudlegout.fr/a-propos.html) : Directeur de Recherche Inria, formateur Python depuis 2011. Co-créateur du MOOC Python FUN, 200 000 inscrits. Travaux : Twitter, BitTorrent, Bitcoin.
+- [Contact — Formation Python ou consulting | Arnaud Legout](https://formation.arnaudlegout.fr/contact.html) : Décrivez votre besoin de formation Python ou de consulting technique. Arnaud Legout répond sous 48 heures avec une proposition adaptée.
+
+## Autre site
+- [Arnaud Legout — Conseil data science](https://consulting.arnaudlegout.fr/)
