@@ -274,6 +274,15 @@ pre code {
   white-space: nowrap;
 }
 
+/* Libellé court sur les écrans les plus étroits : « Demander un devis » et le
+   burger ne tiennent pas côte à côte sans rogner la marge droite sous 390 px */
+.nav__cta-short { display: none; }
+
+@media (max-width: 389px) {
+  .nav__cta-long { display: none; }
+  .nav__cta-short { display: inline; }
+}
+
 .nav__list {
   display: flex;
   align-items: center;
