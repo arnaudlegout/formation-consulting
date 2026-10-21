@@ -301,10 +301,10 @@
           réels.</p>
 
           <h3>Module 2 — Numba, accélération JIT pour le calcul numérique</h3>
-          <p>Principe de la compilation JIT avec Numba. Décorateurs <code>@jit</code> et <code>@njit</code>&nbsp;: quand et comment les utiliser. Accélération de boucles et de fonctions NumPy. Parallélisation avec <code>@njit(parallel=True)</code> et <code>prange</code>. Cas d'usage&nbsp;: simulation numérique, traitement de signaux, calcul scientifique. Limites de Numba et bonnes pratiques.</p>
+          <p>Principe de la compilation JIT avec Numba. Le décorateur <code>@jit</code>&nbsp;: quand et comment l'utiliser. Accélération de boucles et de fonctions NumPy. Parallélisation avec <code>@jit(parallel=True)</code> et <code>prange</code>. Cas d'usage&nbsp;: simulation numérique, traitement de signaux, calcul scientifique. Limites de Numba et bonnes pratiques.</p>
 
           <h3>Module 3 — Multiprocessing, parallélisme multi-processus en Python</h3>
-          <p>Le GIL Python et ses implications pour le parallélisme CPU-bound. Le module <code>multiprocessing</code>&nbsp;: Process, Pool, Queue, Pipe. <code>Pool.map()</code> et <code>Pool.starmap()</code>&nbsp;: parallélisation de tâches indépendantes. Partage de mémoire et communication entre processus. Comparaison <code>multiprocessing</code> vs Numba vs Polars&nbsp;: quand utiliser quoi. Pièges courants et débogage de code multiprocessing.</p>
+          <p>Le GIL Python et ses implications pour le parallélisme CPU-bound. Python sans GIL (version <em>free-threaded</em>, officiellement supportée depuis Python&nbsp;3.14)&nbsp;: ce qui change, et pourquoi le multiprocessing reste aujourd'hui la solution standard. Le module <code>multiprocessing</code>&nbsp;: Process, Pool, Queue, Pipe. <code>Pool.map()</code> et <code>Pool.starmap()</code>&nbsp;: parallélisation de tâches indépendantes. Modes de démarrage des processus (<code>fork</code>, <code>spawn</code>, <code>forkserver</code>, le défaut sous Linux depuis Python&nbsp;3.14) et leurs conséquences sur le code existant. Partage de mémoire et communication entre processus. Comparaison <code>multiprocessing</code> vs Numba vs Polars&nbsp;: quand utiliser quoi. Pièges courants et débogage de code multiprocessing.</p>
         </div>
 
         <div class="page-encart">

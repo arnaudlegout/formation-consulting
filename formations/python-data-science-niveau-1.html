@@ -257,7 +257,7 @@
       <div class="container">
 
         <div class="page-section">
-          <p class="lead">NumPy et Pandas sont les fondations de l'écosystème data science Python. Mal maîtrisées, ces librairies produisent du code lent, verbeux et fragile&nbsp;: copies inutiles, itérations explicites là où la vectorisation s'impose, confusion entre vues et copies dans Pandas.</p>
+          <p class="lead">NumPy et Pandas sont les fondations de l'écosystème data science Python. Mal maîtrisées, ces librairies produisent du code lent, verbeux et fragile&nbsp;: copies inutiles, itérations explicites là où la vectorisation s'impose, modèle Copy-on-Write de Pandas mal compris.</p>
           <p>J'ai vu ces pièges des dizaines de fois en formation. Ils ne viennent pas du niveau des participants&nbsp;: ils viennent d'un <strong>modèle mental incomplet</strong> du fonctionnement interne de ces librairies. Cette formation construit ce modèle mental, pour que vos équipes écrivent du code data science correct dès le premier jet.</p>
         </div>
 
@@ -270,7 +270,7 @@
             <li>Gérer correctement les index, les dates et les séries temporelles dans Pandas</li>
             <li>Lire et écrire des fichiers Parquet avec Pandas et PyArrow pour un stockage efficace</li>
             <li>Produire des visualisations statistiques publiables avec Seaborn</li>
-            <li>Éviter les pièges courants&nbsp;: copie vs vue, chaînage d'indexation, types implicites</li>
+            <li>Comprendre le modèle Copy-on-Write de Pandas et éviter les pièges courants&nbsp;: affectation chaînée, types implicites</li>
           </ul>
         </div>
 
