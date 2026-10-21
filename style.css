@@ -411,8 +411,10 @@ button.nav__link {
     display: none;
     position: absolute;
     top: 100%;
-    left: calc(-1 * var(--px));
-    right: calc(-1 * var(--px));
+    /* .nav est déjà le conteneur pleine largeur : des décalages négatifs
+       feraient déborder le menu et colleraient les liens au bord */
+    left: 0;
+    right: 0;
     background: var(--color-bg);
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
