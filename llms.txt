@@ -9,7 +9,7 @@
 - [Formation Python machine learning scikit-learn](https://formation.arnaudlegout.fr/formations/python-machine-learning.html) : scikit-learn en 3 jours : pipelines, validation croisée, méthodes d'ensemble. Rigueur méthodologique, sans surapprentissage. Intra-entreprise. Note 4,93/5.
 - [Formation Python fondamentaux — pour ingénieurs et chercheurs](https://formation.arnaudlegout.fr/formations/python-niveau-1.html) : Fondamentaux Python en 3 jours : fonctions, itération, modules, espaces de nommage. Pour ingénieurs et chercheurs. Prérequis data science. Note 4,93/5.
 - [Formation Python avancé — décorateurs, descripteurs, métaclasses](https://formation.arnaudlegout.fr/formations/python-avance.html) : Mécanismes internes de Python : décorateurs, générateurs, descripteurs, métaclasses. 3 jours pour développeurs expérimentés. Intra-entreprise. Note 4,93/5.
-- [Arnaud Legout — directeur de recherche Inria, formateur Python](https://formation.arnaudlegout.fr/a-propos.html) : Directeur de recherche Inria, formateur Python depuis 2011. Co-créateur du MOOC Python FUN, plus de 200 000 inscrits. Travaux : Twitter, BitTorrent, Bitcoin.
+- [Arnaud Legout — directeur de recherche Inria, formateur Python](https://formation.arnaudlegout.fr/a-propos.html) : Directeur de recherche Inria, formateur Python depuis 2011. Co-créateur du MOOC Python FUN, plus de 150 000 inscrits. Travaux : Twitter, BitTorrent, Bitcoin.
 - [Contact — Formation Python data science | Arnaud Legout](https://formation.arnaudlegout.fr/contact.html) : Décrivez votre besoin de formation Python ou data science pour votre équipe. Arnaud Legout répond sous 48 heures avec une proposition adaptée.
 
 ## Autres sites
