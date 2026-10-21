@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Formation Python ou consulting | Arnaud Legout</title>
-  <meta name="description" content="Décrivez votre besoin de formation Python ou de consulting technique. Arnaud Legout répond sous 48 heures avec une proposition adaptée.">
+  <title>Contact — Formation Python data science | Arnaud Legout</title>
+  <meta name="description" content="Décrivez votre besoin de formation Python ou data science pour votre équipe. Arnaud Legout répond sous 48 heures avec une proposition adaptée.">
     <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://formation.arnaudlegout.fr/contact.html">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
@@ -14,19 +14,19 @@
   <meta property="og:url" content="https://formation.arnaudlegout.fr/contact.html">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Arnaud Legout — Formations Python data science">
-  <meta property="og:title" content="Contact — Formation Python ou consulting | Arnaud Legout">
-  <meta property="og:description" content="Décrivez votre besoin de formation Python ou de consulting technique. Arnaud Legout répond sous 48 heures avec une proposition adaptée.">
+  <meta property="og:title" content="Contact — Formation Python data science | Arnaud Legout">
+  <meta property="og:description" content="Décrivez votre besoin de formation Python ou data science pour votre équipe. Arnaud Legout répond sous 48 heures avec une proposition adaptée.">
   <meta property="og:image" content="https://formation.arnaudlegout.fr/assets/images/og-image.jpg">
   <meta property="og:image:secure_url" content="https://formation.arnaudlegout.fr/assets/images/og-image.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Formation Python data science par Arnaud Legout, Directeur de Recherche Inria — Note 4,93/5">
+  <meta property="og:image:alt" content="Formation Python data science par Arnaud Legout, directeur de recherche Inria — Note 4,93/5">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact — Formation Python ou consulting | Arnaud Legout">
-  <meta name="twitter:description" content="Décrivez votre besoin de formation Python ou de consulting technique. Arnaud Legout répond sous 48 heures avec une proposition adaptée.">
+  <meta name="twitter:title" content="Contact — Formation Python data science | Arnaud Legout">
+  <meta name="twitter:description" content="Décrivez votre besoin de formation Python ou data science pour votre équipe. Arnaud Legout répond sous 48 heures avec une proposition adaptée.">
   <meta name="twitter:image" content="https://formation.arnaudlegout.fr/assets/images/og-image.jpg">
 
   <script type="application/ld+json">
@@ -35,7 +35,7 @@
     "@type": "ContactPage",
     "name": "Contact — Arnaud Legout",
     "url": "https://formation.arnaudlegout.fr/contact.html",
-    "description": "Formulaire de contact pour les demandes de formation Python et de consulting auprès d'Arnaud Legout.",
+    "description": "Formulaire de contact pour les demandes de formation Python et data science auprès d'Arnaud Legout.",
     "inLanguage": "fr-FR",
     "isPartOf": {
       "@type": "WebSite",
@@ -118,7 +118,7 @@
     <div class="page-hero">
       <div class="container container--text">
         <h1>Discutons de votre besoin</h1>
-        <p class="page-hero__subtitle">Formation Python sur mesure ou mission de consulting&nbsp;: décrivez-moi votre contexte et vos objectifs. Je reviens vers vous sous 48 heures avec une proposition adaptée.</p>
+        <p class="page-hero__subtitle">Formation Python sur mesure&nbsp;: décrivez-moi votre contexte et vos objectifs. Je reviens vers vous sous 48 heures avec une proposition adaptée.</p>
       </div>
     </div>
 
@@ -130,7 +130,7 @@
           data-tally-src="https://tally.so/embed/Pdvqo1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
           class="tally-embed"
           loading="lazy"
-          title="Formulaire de contact — formation Python ou consulting"
+          title="Formulaire de contact — formation Python data science"
         ></iframe>
         <script>
           var d = document,
@@ -172,7 +172,7 @@
       <div class="footer__grid">
         <div class="footer__col">
           <p class="footer__col-title">Arnaud Legout</p>
-          <p class="footer__tagline">Directeur de Recherche Inria — Sophia Antipolis, France</p>
+          <p class="footer__tagline">Directeur de recherche Inria — Sophia Antipolis, France</p>
           <ul class="footer__link-list">
             <li><a href="https://arnaudlegout.fr/" target="_blank" rel="noopener">Site personnel — arnaudlegout.fr</a></li>
             <li><a href="https://www-sop.inria.fr/members/Arnaud.Legout/" target="_blank" rel="noopener">Page professionnelle Inria</a></li>
@@ -217,11 +217,13 @@
       if (!btn || !menu) return;
       function closeMenu() {
         btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Ouvrir le menu de navigation');
         menu.classList.remove('is-open');
       }
       btn.addEventListener('click', function () {
         var open = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!open));
+        btn.setAttribute('aria-label', open ? 'Ouvrir le menu de navigation' : 'Fermer le menu de navigation');
         menu.classList.toggle('is-open', !open);
       });
       menu.addEventListener('click', function (e) {

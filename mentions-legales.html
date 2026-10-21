@@ -56,23 +56,24 @@
 
         <h1>Mentions légales</h1>
 
-        <h2>Éditeur du site</h2>
-        <p>
-          Elara Formations — Arnaud Legout<br>
-          Auto-entrepreneur<br>
-          SIRET&nbsp;: 902 319 938 00012<br>
-          Numéro de déclaration d'activité de formation professionnelle&nbsp;: 93061012306<br>
-          Enregistré auprès du préfet de région de Provence-Alpes-Côte d'Azur
-        </p>
+        <h2>Éditeur</h2>
+        <p>Le présent site est édité par Arnaud Legout, entrepreneur individuel sous la dénomination Elara Formations, établi à Antibes (Alpes-Maritimes, France).</p>
+        <p>SIRET&nbsp;: 902&nbsp;319&nbsp;938&nbsp;00012. Déclaration d'activité de formation professionnelle enregistrée sous le numéro 93061012306 auprès du préfet de la région Provence-Alpes-Côte d'Azur.</p>
+        <p>Directeur de la publication&nbsp;: Arnaud Legout.</p>
 
-        <h2>Hébergement</h2>
-        <p>Ce site est hébergé par GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
+        <h2>Hébergeur</h2>
+        <p>Les pages de ce site sont hébergées par GitHub, Inc., dont le siège se trouve au 88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis.</p>
 
         <h2>Données personnelles</h2>
-        <p>Les données saisies dans le formulaire de contact sont transmises via Tally et utilisées uniquement pour répondre à la demande de formation. Aucun cookie de tracking n'est utilisé sur ce site.</p>
-        <p>Ce site utilise <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a> pour mesurer l'audience de manière anonyme. GoatCounter ne pose aucun cookie, ne collecte aucune donnée personnelle et est conforme au RGPD. Seules des statistiques agrégées (pages vues, pays, navigateur) sont enregistrées.</p>
+        <p>La seule collecte de données du site passe par le formulaire de la page contact, opéré par Tally. Les informations que vous y saisissez servent uniquement à répondre à votre demande de formation et ne sont transmises à aucun tiers.</p>
+        <p>Ce site ne dépose aucun cookie et ne charge aucune ressource externe en dehors de ce formulaire et de l'outil de mesure d'audience décrit ci-dessous.</p>
+        <p>La mesure d'audience est assurée par <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, qui ne pose aucun cookie, ne collecte aucune donnée personnelle et n'établit aucun profil de navigation. Seules des statistiques agrégées&nbsp;: pages vues, provenance, pays, navigateur, sont enregistrées.</p>
+        <p>Conformément au règlement général sur la protection des données, vous pouvez demander l'accès, la rectification ou l'effacement des informations vous concernant en écrivant à l'adresse ci-dessous.</p>
 
-        <h2>Contact</h2>
+        <h2>Propriété intellectuelle</h2>
+        <p>Les textes publiés sur ce site sont la propriété d'Arnaud Legout. Toute reproduction intégrale ou partielle nécessite son accord écrit préalable.</p>
+
+        <h2>Nous écrire</h2>
         <p><a href="mailto:arnaud.legout@gmail.com">arnaud.legout@gmail.com</a></p>
 
       </div>
@@ -85,7 +86,7 @@
       <div class="footer__grid">
         <div class="footer__col">
           <p class="footer__col-title">Arnaud Legout</p>
-          <p class="footer__tagline">Directeur de Recherche Inria — Sophia Antipolis, France</p>
+          <p class="footer__tagline">Directeur de recherche Inria — Sophia Antipolis, France</p>
           <ul class="footer__link-list">
             <li><a href="https://arnaudlegout.fr/" target="_blank" rel="noopener">Site personnel — arnaudlegout.fr</a></li>
             <li><a href="https://www-sop.inria.fr/members/Arnaud.Legout/" target="_blank" rel="noopener">Page professionnelle Inria</a></li>
@@ -130,11 +131,13 @@
       if (!btn || !menu) return;
       function closeMenu() {
         btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Ouvrir le menu de navigation');
         menu.classList.remove('is-open');
       }
       btn.addEventListener('click', function () {
         var open = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!open));
+        btn.setAttribute('aria-label', open ? 'Ouvrir le menu de navigation' : 'Fermer le menu de navigation');
         menu.classList.toggle('is-open', !open);
       });
       menu.addEventListener('click', function (e) {

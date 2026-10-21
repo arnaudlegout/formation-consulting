@@ -1512,3 +1512,19 @@ a.card--link:focus-visible .card__link {
   white-space: nowrap;
   border: 0;
 }
+
+/* ============================================================
+   Focus clavier visible
+   ============================================================ */
+
+/* Les états :focus des liens et boutons ne changent que la couleur ou le
+   fond (#FAFAF9 → #F4F4F1), trop peu perceptible au clavier (WCAG 2.4.7).
+   En fin de feuille pour passer après leurs « outline: none ». */
+a:focus-visible,
+button:focus-visible,
+.nav__link:focus-visible,
+.nav__dropdown a:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

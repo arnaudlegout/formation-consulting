@@ -21,7 +21,7 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Formation Python data science par Arnaud Legout, Directeur de Recherche Inria — Note 4,93/5">
+  <meta property="og:image:alt" content="Formation Python data science par Arnaud Legout, directeur de recherche Inria — Note 4,93/5">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -38,6 +38,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": "https://formation.arnaudlegout.fr/formations/python-niveau-1.html#course",
     "name": "Formation Python — niveau 1 (fondamentaux du langage)",
     "description": "Formation professionnelle intensive de 3 jours sur les fondamentaux de Python pour développeurs expérimentés (C, C++, Java, Fortran, Matlab). Références partagées, typage dynamique, espaces de nommage, protocole d'itération, modules et packages, gestion des exceptions.",
     "url": "https://formation.arnaudlegout.fr/formations/python-niveau-1.html",
@@ -47,13 +48,6 @@
       "@id": "https://formation.arnaudlegout.fr/#formation-arnaud-legout",
       "name": "Elara Formations",
       "url": "https://formation.arnaudlegout.fr/"
-    },
-    "instructor": {
-      "@type": "Person",
-      "@id": "https://arnaudlegout.fr/#arnaud-legout",
-      "name": "Arnaud Legout",
-      "jobTitle": "Directeur de recherche Inria",
-      "url": "https://formation.arnaudlegout.fr/a-propos.html"
     },
     "about": [
       "Python",
@@ -87,7 +81,9 @@
         "instructor": {
           "@type": "Person",
           "@id": "https://arnaudlegout.fr/#arnaud-legout",
-          "name": "Arnaud Legout"
+          "name": "Arnaud Legout",
+          "jobTitle": "Directeur de recherche Inria",
+          "url": "https://formation.arnaudlegout.fr/a-propos.html"
         },
         "location": {
           "@type": "Place",
@@ -101,7 +97,9 @@
         "instructor": {
           "@type": "Person",
           "@id": "https://arnaudlegout.fr/#arnaud-legout",
-          "name": "Arnaud Legout"
+          "name": "Arnaud Legout",
+          "jobTitle": "Directeur de recherche Inria",
+          "url": "https://formation.arnaudlegout.fr/a-propos.html"
         }
       }
     ],
@@ -354,7 +352,7 @@
           </a>
 
           <a class="card card--link" href="python-data-science-niveau-1.html">
-            <h3 class="card__title">Python data science — niveau 1</h3>
+            <h3 class="card__title">Python data science — niveau&nbsp;1</h3>
             <p class="card__body">Les fondations de l'écosystème data science Python. Vectorisation, broadcasting,
             manipulation de DataFrames, séries temporelles, format Parquet, visualisation statistique avec Seaborn.</p>
             <span class="card__link">Voir le programme →</span>
@@ -373,7 +371,7 @@
       <div class="footer__grid">
         <div class="footer__col">
           <p class="footer__col-title">Arnaud Legout</p>
-          <p class="footer__tagline">Directeur de Recherche Inria — Sophia Antipolis, France</p>
+          <p class="footer__tagline">Directeur de recherche Inria — Sophia Antipolis, France</p>
           <ul class="footer__link-list">
             <li><a href="https://arnaudlegout.fr/" target="_blank" rel="noopener">Site personnel — arnaudlegout.fr</a></li>
             <li><a href="https://www-sop.inria.fr/members/Arnaud.Legout/" target="_blank" rel="noopener">Page professionnelle Inria</a></li>
@@ -418,11 +416,13 @@
       if (!btn || !menu) return;
       function closeMenu() {
         btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Ouvrir le menu de navigation');
         menu.classList.remove('is-open');
       }
       btn.addEventListener('click', function () {
         var open = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!open));
+        btn.setAttribute('aria-label', open ? 'Ouvrir le menu de navigation' : 'Fermer le menu de navigation');
         menu.classList.toggle('is-open', !open);
       });
       menu.addEventListener('click', function (e) {
